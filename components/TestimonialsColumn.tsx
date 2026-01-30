@@ -37,7 +37,7 @@ export const TestimonialsColumn = (props: {
                                     key={i}
                                 >
                                     <div className="text-gray-300 text-sm leading-relaxed mb-6">
-                                        "{text}"
+                                        &ldquo;{text}&rdquo;
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <img
