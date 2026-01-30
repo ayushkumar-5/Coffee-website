@@ -5,13 +5,13 @@ import Image from 'next/image';
 
 export default function PaymentSection() {
     const paymentMethods = [
-    { name: 'Visa', icon: '/payment/visa.png', position: { top: '20%', right: '15%' }, delay: 0.1 },
-    { name: 'Mastercard', icon: '/payment/mastercard.png', position: { top: '35%', left: '10%' }, delay: 0.2 },
-    { name: 'Apple Pay', icon: '/payment/apple-pay.png', position: { top: '55%', left: '35%' }, delay: 0.3 },
-    { name: 'PayPal', icon: '/payment/paypal.png', position: { top: '40%', left: '25%' }, delay: 0.4 },
-    { name: 'Google Pay', icon: '/payment/google-pay.png', position: { top: '45%', right: '30%' }, delay: 0.5 },
-    { name: 'Amex', icon: '/payment/amex.png', position: { bottom: '30%', left: '5%' }, delay: 0.6 },
-];
+        { name: 'Visa', icon: '/payment/visa.png', position: { top: '20%', right: '15%' }, delay: 0.1 },
+        { name: 'Mastercard', icon: '/payment/mastercard.png', position: { top: '35%', left: '10%' }, delay: 0.2 },
+        { name: 'Apple Pay', icon: '/payment/apple-pay.png', position: { top: '55%', left: '35%' }, delay: 0.3 },
+        { name: 'PayPal', icon: '/payment/paypal.png', position: { top: '40%', left: '25%' }, delay: 0.4 },
+        { name: 'Google Pay', icon: '/payment/google-pay.png', position: { top: '45%', right: '30%' }, delay: 0.5 },
+        { name: 'Amex', icon: '/payment/amex.png', position: { bottom: '30%', left: '5%' }, delay: 0.6 },
+    ];
 
 
     return (
@@ -32,7 +32,7 @@ export default function PaymentSection() {
                         transition={{ duration: 0.6 }}
                         className="text-5xl md:text-7xl font-bold mb-4"
                     >
-                        <span className="text-white">Don't just crave it.</span>
+                        <span className="text-white">Don&apos;t just crave it.</span>
                         <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-copper-400 to-gold-400">
                             Get it.
@@ -88,14 +88,14 @@ export default function PaymentSection() {
                             style={method.position}
                         >
                             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-2xl flex items-center justify-center border-4 border-copper-500/20 hover:border-copper-500/40 transition-all duration-300">
-<Image
-    src={method.icon}
-    alt={method.name}
-    width={96}
-    height={96}
-    className="object-contain max-w-[70%] max-h-[70%]"
-    priority
-/>
+                                <Image
+                                    src={method.icon}
+                                    alt={method.name}
+                                    width={96}
+                                    height={96}
+                                    className="object-contain max-w-[70%] max-h-[70%]"
+                                    priority
+                                />
 
                             </div>
                         </motion.div>

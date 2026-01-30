@@ -378,6 +378,8 @@ const SeoElement = memo(({ tag = Tag.P, texts }: { tag: Tag, texts: string[] }) 
     return createElement(safeTag, { style }, texts?.join(" ") ?? "");
 });
 
+SeoElement.displayName = "SeoElement";
+
 // ------------------------------------------------------------ //
 // FONT HANDLING
 // ------------------------------------------------------------ //
